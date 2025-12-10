@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Sarana Sekolah</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-100 font-sans">
     <!-- Header -->
@@ -16,7 +17,9 @@
           <p class="text-sm">Sekolah Menengah Kejuruan</p>
         </div>
         <div>
-          <button class="bg-yellow-400 text-black px-4 py-1 rounded">
+          <button
+            class="bg-yellow-400 text-black px-4 py-1 rounded transition duration-300 hover:bg-yellow-500 hover:shadow-lg"
+          >
             Info Terbaru
           </button>
         </div>
@@ -41,49 +44,80 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <!-- Card 1 -->
-        <div class="bg-white rounded-xl shadow-md p-6">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
+        >
           <h2 class="text-xl font-semibold text-gray-800 mb-2">
             Kepala Sekolah
           </h2>
-          <img src="Img/guru.jpg" alt="" class="shadow-lg rounded-xl  mb-4" />
+          <img src="Img/guru.jpg" alt="" class="shadow-lg rounded-xl mb-4" />
           <p class="text-gray-600">Pak Badrus</p>
         </div>
 
         <!-- Card 2 -->
-        <div class="bg-white rounded-xl shadow-md p-6">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
+        >
           <h2 class="text-xl font-semibold text-gray-800 mb-2">Mapel 1</h2>
-          <img src="Img/guru.jpg" alt="" class="shadow-lg rounded-xl  mb-4" />
+          <img src="Img/guru.jpg" alt="" class="shadow-lg rounded-xl mb-4" />
           <p class="text-gray-600">Pak/bu</p>
         </div>
 
         <!-- Card 3 -->
-        <div class="bg-white rounded-xl shadow-md p-6">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
+        >
           <h2 class="text-xl font-semibold text-gray-800 mb-2">Mapel 2</h2>
-          <img src="Img/guru.jpg" alt="" class="shadow-lg rounded-xl  mb-4" />
+          <img src="Img/guru.jpg" alt="" class="shadow-lg rounded-xl mb-4" />
           <p class="text-gray-600">Pak/bu</p>
         </div>
 
         <!-- Card 4 -->
-        <div class="bg-white rounded-xl shadow-md p-6">
-          <h2 class="text-xl font-semibold text-gray-800 mb-2 ">Mapel 3</h2>
-          <img src="Img/guru.jpg" alt="" class="shadow-lg rounded-xl  mb-4" />
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
+        >
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Mapel 3</h2>
+          <img src="Img/guru.jpg" alt="" class="shadow-lg rounded-xl mb-4" />
           <p class="text-gray-600">Pak/bu</p>
         </div>
 
         <!-- Card 5 -->
-        <div class="bg-white rounded-xl shadow-md p-6">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
+        >
           <h2 class="text-xl font-semibold text-gray-800 mb-2">Mapel 4</h2>
-          <img src="Img/guru.jpg" alt="" class="shadow-lg rounded-xl  mb-4" />
+          <img src="Img/guru.jpg" alt="" class="shadow-lg rounded-xl mb-4" />
           <p class="text-gray-600">Pak/bu</p>
         </div>
 
         <!-- Card 6 -->
-        <div class="bg-white rounded-xl shadow-md p-6">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
+        >
           <h2 class="text-xl font-semibold text-gray-800 mb-2">Mapel 5</h2>
-          <img src="Img/guru.jpg" alt="" class="shadow-lg rounded-xl  mb-4" />
+          <img src="Img/guru.jpg" alt="" class="shadow-lg rounded-xl mb-4" />
           <p class="text-gray-600">Pak/bu</p>
         </div>
       </div>
     </div>
   </body>
 </html>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
+</script>
