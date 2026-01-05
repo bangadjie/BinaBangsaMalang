@@ -1,6 +1,6 @@
 {
   "functions": {
-    "**/*.php": {
+    "api/*.php": {
       "runtime": "vercel-php@0.7.0"
     }
   },
@@ -10,8 +10,16 @@
       "dest": "/BinaBangsaMalang.html"
     },
     {
-      "src": "/(.*).php",
-      "dest": "/$1.php"
+      "src": "/Admin",
+      "dest": "/api/Admin.php"
+    },
+    {
+      "src": "/ExportExcel",
+      "dest": "/api/ExportExcel.php"
+    },
+    {
+      "src": "/Proses",
+      "dest": "/api/Proses.php"
     },
     {
       "src": "/(.*)",
