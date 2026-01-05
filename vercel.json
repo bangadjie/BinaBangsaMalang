@@ -1,18 +1,21 @@
 {
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/BinaBangsaMalang.html"
-    }
-  ],
   "functions": {
-    "api/*.php": {
+    "**/*.php": {
       "runtime": "vercel-php@0.7.0"
     }
   },
   "routes": [
-    { "src": "/(.*).php", "dest": "/$1.php" },
-    { "src": "/(.*)", "dest": "/$1" }
+    {
+      "src": "/",
+      "dest": "/BinaBangsaMalang.html"
+    },
+    {
+      "src": "/(.*).php",
+      "dest": "/$1.php"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
   ]
-
 }
