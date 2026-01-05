@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/*.php": {
-      "runtime": "vercel-php@0.7.0"
+      "runtime": "vercel-php@0.7.1"
     },
     "*.php": {
       "runtime": "vercel-php@0.7.1"
@@ -14,15 +14,15 @@
     },
     {
       "src": "/Admin",
-      "dest": "/api/Admin.php"
+      "dest": "/Admin.php"
     },
     {
       "src": "/ExportExcel",
-      "dest": "/api/ExportExcel.php"
+      "dest": "/ExportExcel.php"
     },
     {
       "src": "/Proses",
-      "dest": "/api/Proses.php"
+      "dest": "/Proses.php"
     },
     {
       "src": "/(.*)",
