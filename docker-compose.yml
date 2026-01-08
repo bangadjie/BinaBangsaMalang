@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  binabangsa-app:
+    build: .
+    container_name: binabangsa_container
+    ports:
+      - "8080:80" 
+    restart: always
+
+  binabangsa-db:
+    image: mariadb:10.6
+    container_name: binabangsa_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: binabangsa
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    restart: always
