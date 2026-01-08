@@ -90,6 +90,17 @@ $query_smk = mysqli_query($conn, "SELECT * FROM smkbinabangsamalang ORDER BY id 
                 </a>
             </header>
 
+            <div class="mb-6">
+                <div class="relative max-w-md">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" id="searchInput" onkeyup="searchTable()"
+                        placeholder="Cari nama siswa..."
+                        class="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition shadow-sm">
+                </div>
+            </div>
+
             <section class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
                 <div class="overflow-x-auto custom-scrollbar">
                     <table class="w-full text-left border-separate border-spacing-0">
@@ -232,6 +243,25 @@ $query_smk = mysqli_query($conn, "SELECT * FROM smkbinabangsamalang ORDER BY id 
         const modal = document.getElementById('detailModal');
         if (event.target == modal) {
             closeModal();
+        }
+    }
+
+    function searchTable() {
+        let input = document.getElementById("searchInput");
+        let filter = input.value.toUpperCase();
+        let table = document.querySelector("table");
+        let tr = table.getElementsByTagName("tr");
+
+        for (let i = 1; i < tr.length; i++) {
+            let td = tr[i].getElementsByTagName("td")[0]; // Kolom Nama
+            if (td) {
+                let txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
         }
     }
 </script>
