@@ -1,7 +1,7 @@
 <?php
-$host = "localhost";
+$host = "binabangsa-db";
 $user = "root";
-$pass = "";
+$pass = "root";
 $db   = "binabangsa";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
