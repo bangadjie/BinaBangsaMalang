@@ -1,99 +1,135 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Sarana Sekolah</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body class="bg-gray-100 font-sans">
-    <!-- Header -->
-    <header class="bg-blue-900 text-white">
-      <div
-        class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center"
-      >
-        <div>
-          <h1 class="text-2xl font-bold">SMK Bina Bangsa Malang</h1>
-          <p class="text-sm">Sekolah Menengah Kejuruan</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kesiswaan - SMK Bina Bangsa Malang</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 font-sans text-slate-900">
+
+  <header class="bg-blue-900 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="bg-white p-1.5 rounded-lg">
+           <i class="fas fa-user-graduate text-blue-900 text-xl"></i>
         </div>
         <div>
-          <button
-            class="bg-yellow-400 text-black px-4 py-1 rounded transition duration-300 hover:bg-yellow-500 hover:shadow-lg"
-          >
-            Info Terbaru
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <!-- Navbar -->
-    <nav class="bg-blue-700 text-white">
-      <div class="max-w-7xl mx-auto px-4 py-3 flex space-x-6 text-sm">
-        <a href="BinaBangsaMalang.html" class="hover:underline">Beranda</a>
-        <a href="Sarana.html" class="hover:underline">Sarana</a>
-        <a href="Guru.html" class="hover:underline">Guru</a>
-        <a href="Siswa.html" class="hover:underline">Siswa</a>
-        <a href="Contact.html" class="hover:underline">Contact</a>
-      </div>
-    </nav>
-
-    <div class="max-w-6xl mx-auto px-4 py-10">
-      <h1 class="text-3xl font-bold mb-8 text-center text-blue-700">
-        Jadwal Pelajaran sekolah
-      </h1>
-      <div class="space-y-10">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div
-            data-aos="fade-up"
-            data-aos-delay="150"
-            class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
-          >
-            <h2 class="text-xl font-semibold text-gray-800 mb-2">
-              Jadwal Kelas 7
-            </h2>
-            <a href="Jadwal/JadwalKelas7.html"
-              ><button class="text-gray-900 hover:text-blue-600">
-                view more
-              </button></a
-            >
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="150"
-            class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
-          >
-            <h2 class="text-xl font-semibold text-gray-800 mb-2">
-              Jadwal Kelas 8
-            </h2>
-            <a href="Jadwal/JadwalKelas8.html"
-              ><button class="text-gray-900 hover:text-blue-600">
-                view more
-              </button></a
-            >
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="150"
-            class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
-          >
-            <h2 class="text-xl font-semibold text-gray-800 mb-2">
-              Jadwal Kelas 9
-            </h2>
-            <a href="Jadwal/JadwalKelas9.html"
-              ><button class="text-gray-900 hover:text-blue-600">
-                view more
-              </button></a
-            >
-          </div>
+          <h1 class="text-xl md:text-2xl font-bold tracking-tight">SMK Bina Bangsa Malang</h1>
+          <p class="text-xs text-blue-200 uppercase tracking-widest">Portal Kesiswaan</p>
         </div>
       </div>
     </div>
-  </body>
+  </header>
+
+  <nav class="bg-blue-700 text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex space-x-8 text-sm font-medium">
+      <a href="BinaBangsaMalang.html" class="hover:text-yellow-300 transition">Beranda</a>
+      <a href="Sarana.html" class="hover:text-yellow-300 transition">Sarana</a>
+      <a href="Guru.html" class="hover:text-yellow-300 transition">Guru</a>
+      <a href="Siswa.html" class="text-yellow-300 border-b-2 border-yellow-300 pb-1 font-bold">Siswa</a>
+      <a href="Contact.html" class="hover:text-yellow-300 transition">Contact</a>
+    </div>
+  </nav>
+
+  <section class="relative py-20 bg-blue-800 overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <img src="https://www.transparenttextures.com/patterns/cubes.png" alt="pattern">
+    </div>
+    <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-6" data-aos="fade-down">Kreativitas Tanpa Batas</h1>
+      <p class="text-blue-100 text-lg max-w-3xl mx-auto" data-aos="fade-up">
+        Di SMK Bina Bangsa, kami mendukung setiap bakat siswa melalui berbagai kegiatan pengembangan diri dan organisasi yang aktif.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 max-w-7xl mx-auto px-6">
+    <div class="flex items-center gap-4 mb-10">
+      <div class="h-1 w-12 bg-blue-600"></div>
+      <h2 class="text-3xl font-bold text-slate-800">Ekstrakurikuler Unggulan</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
+        <div class="h-40 bg-blue-500 flex items-center justify-center text-white">
+          <i class="fas fa-futbol fa-4x opacity-50"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Futsal & Olahraga</h3>
+          <p class="text-slate-600 text-sm">Mengasah fisik dan kerjasama tim melalui kompetisi antar sekolah.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="200">
+        <div class="h-40 bg-emerald-500 flex items-center justify-center text-white">
+          <i class="fas fa-code fa-4x opacity-50"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">IT & Coding Club</h3>
+          <p class="text-slate-600 text-sm">Wadah bagi siswa yang tertarik mengembangkan aplikasi dan website.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="300">
+        <div class="h-40 bg-red-500 flex items-center justify-center text-white">
+          <i class="fas fa-music fa-4x opacity-50"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Seni musik</h3>
+          <p class="text-slate-600 text-sm">Menyalurkan bakat bermusik melalui grup band dan paduan suara.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="400">
+        <div class="h-40 bg-purple-500 flex items-center justify-center text-white">
+          <i class="fas fa-camera fa-4x opacity-50"></i>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-2">Jurnalistik & Fotografi</h3>
+          <p class="text-slate-600 text-sm">Melatih kemampuan dokumentasi dan publikasi kegiatan sekolah.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="bg-slate-900 rounded-[3rem] p-10 md:p-16 flex flex-col md:flex-row items-center gap-12 text-white shadow-2xl">
+        <div class="md:w-1/2" data-aos="fade-right">
+          <span class="bg-blue-600 text-xs font-bold px-4 py-1 rounded-full uppercase tracking-widest">Organisasi Siswa</span>
+          <h2 class="text-4xl font-bold mt-4 mb-6">OSIS Bina Bangsa</h2>
+          <p class="text-slate-400 leading-relaxed mb-8">
+            OSIS menjadi wadah utama bagi siswa untuk belajar berorganisasi, kepemimpinan, dan mengelola berbagai acara besar sekolah seperti Class Meeting dan HUT Sekolah.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 text-center">
+              <div class="text-2xl font-bold text-blue-500">15+</div>
+              <div class="text-xs text-slate-500">Anggota Aktif</div>
+            </div>
+            <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 text-center">
+              <div class="text-2xl font-bold text-blue-500">12</div>
+              <div class="text-xs text-slate-500">Program Kerja</div>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2 relative" data-aos="fade-left">
+          <div class="bg-blue-600/20 absolute -inset-4 blur-3xl rounded-full"></div>
+          <img src="Img/YAYASAN.png" alt="OSIS" class="relative rounded-3xl shadow-xl border-4 border-slate-800">
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <footer class="bg-slate-50 py-10 text-center text-slate-400 text-sm">
+    <p>© 2026 SMK Bina Bangsa Malang. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
+</body>
 </html>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true,
-  });
-</script>
