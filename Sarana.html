@@ -2,168 +2,237 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <title>Sarana Sekolah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarana & Prasarana - SMK Bina Bangsa Malang</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-100 font-sans">
-    <!-- Header -->
-    <header class="bg-blue-900 text-white">
+  <body class="bg-slate-50 font-sans text-slate-900">
+    <header class="bg-blue-900 text-white shadow-md">
       <div
-        class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center"
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
       >
-        <div>
-          <h1 class="text-2xl font-bold">SMK Bina Bangsa Malang</h1>
-          <p class="text-sm">Sekolah Menengah Kejuruan</p>
-        </div>
-        <div>
-          <button
-            class="bg-yellow-400 text-black px-4 py-1 rounded transition duration-300 hover:bg-yellow-500 hover:shadow-lg"
-          >
-            Info Terbaru
-          </button>
+        <div class="flex items-center gap-3">
+          <div class="bg-white p-1.5 rounded-lg">
+            <i class="fas fa-building text-blue-900 text-xl"></i>
+          </div>
+          <div>
+            <h1 class="text-xl md:text-2xl font-bold tracking-tight">
+              SMK Bina Bangsa Malang
+            </h1>
+            <p class="text-xs text-blue-200 uppercase tracking-widest">
+              Fasilitas Modern
+            </p>
+          </div>
         </div>
       </div>
     </header>
 
-    <!-- Navbar -->
-    <nav class="bg-blue-700 text-white">
-      <div class="max-w-7xl mx-auto px-4 py-3 flex space-x-6 text-sm">
-        <a href="BinaBangsaMalang.html" class="hover:underline">Beranda</a>
-        <a href="Sarana.html" class="hover:underline">Sarana</a>
-        <a href="Guru.html" class="hover:underline">Guru</a>
-        <a href="Siswa.html" class="hover:underline">Siswa</a>
-        <a href="Contact.html" class="hover:underline">Contact</a>
+    <nav class="bg-blue-700 text-white sticky top-0 z-50 shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-6 py-3 flex space-x-8 text-sm font-medium"
+      >
+        <a href="BinaBangsaMalang.html" class="hover:text-yellow-300 transition"
+          >Beranda</a
+        >
+        <a
+          href="Sarana.html"
+          class="text-yellow-300 border-b-2 border-yellow-300 pb-1 font-bold"
+          >Sarana</a
+        >
+        <a href="Guru.html" class="hover:text-yellow-300 transition">Guru</a>
+        <a href="Siswa.html" class="hover:text-yellow-300 transition">Siswa</a>
+        <a href="Contact.html" class="hover:text-yellow-300 transition"
+          >Contact</a
+        >
       </div>
     </nav>
 
-    <div class="max-w-6xl mx-auto px-4 py-10">
-      <h1 class="text-3xl font-bold mb-8 text-center text-blue-700">
-        Sarana dan Prasarana Sekolah
+    <div class="bg-blue-800 text-white py-16 text-center">
+      <h1 class="text-4xl font-bold mb-4" data-aos="fade-down">
+        Fasilitas Sekolah
       </h1>
+      <p
+        class="text-blue-100 max-w-2xl mx-auto px-4 text-lg font-light"
+        data-aos="fade-up"
+      >
+        Kami berkomitmen menyediakan lingkungan belajar yang representatif dan
+        nyaman untuk menunjang prestasi seluruh siswa.
+      </p>
+    </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <!-- Card 1 -->
+    <div class="max-w-7xl mx-auto px-6 -mt-10 pb-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
+          class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition duration-300 hover:shadow-2xl hover:-translate-y-2"
           data-aos="fade-up"
-          data-aos-delay="0"
-          class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
         >
-          <h2 class="text-xl font-semibold text-gray-800 mb-2">Ruang Kelas</h2>
-          <img
-            src="Img/ruangKelas.jpg"
-            alt="Ruang Kelas"
-            class="shadow-lg rounded-xl mb-4"
-          />
-          <p class="text-gray-600">
-            Ruang kelas yang nyaman, ber-AC, dan dilengkapi dengan proyektor.
-          </p>
+          <div class="relative h-56">
+            <img
+              src="Img/ruangKelas.jpg"
+              alt="Ruang Kelas"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-blue-600 text-white p-3 rounded-2xl shadow-lg"
+            >
+              <i class="fas fa-chalkboard-teacher fa-lg"></i>
+            </div>
+          </div>
+          <div class="p-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-3">Ruang Kelas</h2>
+            <p class="text-slate-600 leading-relaxed">
+              Ruang kelas yang nyaman, bersih, dan dilengkapi dengan proyektor
+              untuk mendukung pembelajaran interaktif.
+            </p>
+          </div>
         </div>
 
-        <!-- Card 2 -->
         <div
+          class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition duration-300 hover:shadow-2xl hover:-translate-y-2"
           data-aos="fade-up"
-          data-aos-delay="150"
-          class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
+          data-aos-delay="100"
         >
-          <h2 class="text-xl font-semibold text-gray-800 mb-2">
-            Laboratorium Komputer
-          </h2>
-          <img
-            src="Img/labKom.jpg"
-            alt="Laboratorium Komputer"
-            class="shadow-lg rounded-xl mb-4"
-          />
-          <p class="text-gray-600">
-            Lab komputer dengan spesifikasi modern untuk pembelajaran digital.
-          </p>
+          <div class="relative h-56">
+            <img
+              src="Img/labKom.jpg"
+              alt="Lab Komputer"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-emerald-600 text-white p-3 rounded-2xl shadow-lg"
+            >
+              <i class="fas fa-desktop fa-lg"></i>
+            </div>
+          </div>
+          <div class="p-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-3">Lab Komputer</h2>
+            <p class="text-slate-600 leading-relaxed">
+              Fasilitas komputer dengan spesifikasi modern dan koneksi internet
+              cepat untuk praktik digital siswa.
+            </p>
+          </div>
         </div>
 
-        <!-- Card 3 -->
         <div
+          class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition duration-300 hover:shadow-2xl hover:-translate-y-2"
           data-aos="fade-up"
-          data-aos-delay="150"
-          class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
+          data-aos-delay="200"
         >
-          <h2 class="text-xl font-semibold text-gray-800 mb-2">Perpustakaan</h2>
-          <img
-            src="Img/Perpus.jpg"
-            alt="Perpustakaan"
-            class="shadow-lg rounded-xl mb-4"
-          />
-          <p class="text-gray-600">
-            Koleksi buku lengkap dan tempat baca nyaman untuk siswa.
-          </p>
+          <div class="relative h-56">
+            <img
+              src="Img/Perpus.jpg"
+              alt="Perpustakaan"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-orange-500 text-white p-3 rounded-2xl shadow-lg"
+            >
+              <i class="fas fa-book-reader fa-lg"></i>
+            </div>
+          </div>
+          <div class="p-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-3">Perpustakaan</h2>
+            <p class="text-slate-600 leading-relaxed">
+              Koleksi buku yang lengkap dan ruang baca yang tenang untuk
+              meningkatkan literasi seluruh siswa.
+            </p>
+          </div>
         </div>
 
-        <!-- Card 4 -->
         <div
+          class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition duration-300 hover:shadow-2xl hover:-translate-y-2"
           data-aos="fade-up"
-          data-aos-delay="150"
-          class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
+          data-aos-delay="300"
         >
-          <h2 class="text-xl font-semibold text-gray-800 mb-2">Mushola</h2>
-          <img
-            src="Img/Mushola.jpg"
-            alt="Mushola"
-            class="shadow-lg rounded-xl mb-4"
-          />
-          <p class="text-gray-600">
-            Tempat ibadah yang bersih dan nyaman untuk siswa dan guru.
-          </p>
+          <div class="relative h-56">
+            <img
+              src="Img/labOr.jpg"
+              alt="Lapangan Olahraga"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-red-600 text-white p-3 rounded-2xl shadow-lg"
+            >
+              <i class="fas fa-basketball-ball fa-lg"></i>
+            </div>
+          </div>
+          <div class="p-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-3">
+              Sarana Olahraga
+            </h2>
+            <p class="text-slate-600 leading-relaxed">
+              Lapangan yang luas untuk kegiatan olahraga seperti futsal, basket,
+              dan voli demi kesehatan siswa.
+            </p>
+          </div>
         </div>
 
-        <!-- Card 5 -->
         <div
+          class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition duration-300 hover:shadow-2xl hover:-translate-y-2"
           data-aos="fade-up"
-          data-aos-delay="150"
-          class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
+          data-aos-delay="400"
         >
-          <h2 class="text-xl font-semibold text-gray-800 mb-2">
-            Lapangan Olahraga
-          </h2>
-          <img
-            src="Img/labOr.jpg"
-            alt="Lapangan Olahraga"
-            class="shadow-lg rounded-xl mb-4"
-          />
-          <p class="text-gray-600">
-            Lapangan basket, voli, dan futsal yang luas dan terawat.
-          </p>
+          <div class="relative h-56">
+            <img
+              src="Img/Mushola.jpg"
+              alt="Mushola"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-purple-600 text-white p-3 rounded-2xl shadow-lg"
+            >
+              <i class="fas fa-mosque fa-lg"></i>
+            </div>
+          </div>
+          <div class="p-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-3">Mushola</h2>
+            <p class="text-slate-600 leading-relaxed">
+              Tempat ibadah yang bersih dan nyaman untuk mendukung kegiatan
+              spiritual warga sekolah.
+            </p>
+          </div>
         </div>
 
-        <!-- Card 6 -->
         <div
+          class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 transition duration-300 hover:shadow-2xl hover:-translate-y-2"
           data-aos="fade-up"
-          data-aos-delay="150"
-          class="bg-white rounded-xl shadow-md p-6 transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.03] cursor-pointer"
+          data-aos-delay="500"
         >
-          <h2 class="text-xl font-semibold text-gray-800 mb-2">Kantin Sehat</h2>
-          <img
-            src="Img/Kantin.jpg"
-            alt="Kantin Sehat"
-            class="shadow-lg rounded-xl mb-4"
-          />
-          <p class="text-gray-600">
-            Kantin bersih dengan makanan sehat dan harga terjangkau.
-          </p>
+          <div class="relative h-56">
+            <img
+              src="Img/Kantin.jpg"
+              alt="Kantin Sehat"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-4 left-4 bg-yellow-500 text-white p-3 rounded-2xl shadow-lg"
+            >
+              <i class="fas fa-utensils fa-lg"></i>
+            </div>
+          </div>
+          <div class="p-8">
+            <h2 class="text-2xl font-bold text-slate-800 mb-3">Kantin Sehat</h2>
+            <p class="text-slate-600 leading-relaxed">
+              Menyediakan berbagai pilihan makanan sehat dan bergizi bagi siswa
+              dalam lingkungan yang bersih.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+
+    <footer class="bg-slate-900 text-slate-400 py-10 text-center">
+      <p>© 2026 SMK Bina Bangsa Malang. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+    </script>
   </body>
 </html>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true,
-  });
-</script>
-<script>
-  fetch("NavBar.html")
-    .then((res) => res.text())
-    .then((data) => {
-      document.getElementById("NavBar-placeholder").innerHTML = data;
-    });
-</script>
