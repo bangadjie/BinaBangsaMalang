@@ -63,7 +63,7 @@ $total_smp = mysqli_num_rows(mysqli_query($conn, "SELECT id FROM smpbinabangsama
                     <div>
                         <p class="text-slate-400 font-medium uppercase tracking-wider text-sm">Total Pendaftar SMK</p>
                         <h2 class="text-5xl font-black text-slate-800 mt-2"><?= $total_smk ?> <span class="text-lg font-normal text-slate-400">Siswa</span></h2>
-                        <a href="DataSMK.php" class="inline-block mt-4 text-blue-600 font-semibold hover:underline text-sm">Lihat Detail Data →</a>
+                        <a href="dataSMK.php" class="inline-block mt-4 text-blue-600 font-semibold hover:underline text-sm">Lihat Detail Data →</a>
                     </div>
                     <div class="bg-blue-50 p-6 rounded-2xl text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                         <i class="fas fa-user-graduate fa-3x"></i>
@@ -74,7 +74,7 @@ $total_smp = mysqli_num_rows(mysqli_query($conn, "SELECT id FROM smpbinabangsama
                     <div>
                         <p class="text-slate-400 font-medium uppercase tracking-wider text-sm">Total Pendaftar SMP</p>
                         <h2 class="text-5xl font-black text-slate-800 mt-2"><?= $total_smp ?> <span class="text-lg font-normal text-slate-400">Siswa</span></h2>
-                        <a href="DataSMP.php" class="inline-block mt-4 text-green-600 font-semibold hover:underline text-sm">Lihat Detail Data →</a>
+                        <a href="dataSMP.php" class="inline-block mt-4 text-green-600 font-semibold hover:underline text-sm">Lihat Detail Data →</a>
                     </div>
                     <div class="bg-green-50 p-6 rounded-2xl text-green-600 group-hover:bg-green-600 group-hover:text-white transition-colors">
                         <i class="fas fa-user-tie fa-3x"></i>
